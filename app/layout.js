@@ -1,7 +1,4 @@
-import Logo from "@/app/_components/Logo";
-import Navigation from "@/app/_components/Navigation";
 import "@/app/_styles/globals.css";
-
 import { Josefin_Sans } from "next/font/google";
 import Header from "./_components/Header";
 import { ReservationProvider } from "./_components/ReservationContext";
@@ -12,10 +9,10 @@ const josefin = Josefin_Sans({
 });
 
 export const metadata = {
-  // title: "The wild oasis",
+ 
   title: {
-    template: "%s / The Wild Oasis",
-    default: "Welcome / The Wild Oasis",
+    template: "%s / The Angel's Nest",
+    default: "Welcome / The Angel's Nest",
   },
   description:
     "Luxurious cabin hotel, located in the heart of the Italian Dolomites, surrounded by beautiful mountains and dark forests",

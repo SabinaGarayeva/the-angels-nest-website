@@ -9,11 +9,11 @@ function Logo() {
         src={logo}
         height="60"
         width="60"
-        alt="The Wild Oasis logo"
+        alt="The Angel's Nest logo"
         quality={100}
       />
       <span className="text-xl font-semibold text-primary-100">
-        The Wild Oasis
+        The Angel's Nest
       </span>
     </Link>
   );
