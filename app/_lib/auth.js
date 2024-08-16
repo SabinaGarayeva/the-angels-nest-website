@@ -1,21 +1,32 @@
+// import NextAuth from "next-auth";
+// import Google from "next-auth/providers/google";
+
+// const authConfig = {
+//   providers: [
+//     Google({
+//       clientId: process.env.AUTH_GOOGLE_ID,
+//       clientSecret: process.env.AUTH_GOOGLE_SECRET,
+//     }),
+//   ],
+// };
+
+// export const {
+//   auth,
+//   handlers: { GET, POST },
+// } = NextAuth(authConfig);
+
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 const authConfig = {
   providers: [
     GoogleProvider({
-      clientId: process.env.GOOGLE_CLIENT_ID,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      clientId: process.env.AUTH_GOOGLE_ID,
+      clientSecret: process.env.AUTH_GOOGLE_SECRET,
     }),
   ],
 };
-
-// export const {
-//   auth,
-//   handler: { GET, POST },
-// } = NextAuth(authConfig);
-
-
-const authHandler = NextAuth(authConfig);
-
-export { authHandler as GET, authHandler as POST };
-
+ 
+export const {
+  auth,
+  handlers: { GET, POST },
+} = NextAuth(authConfig);
