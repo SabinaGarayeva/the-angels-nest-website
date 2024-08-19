@@ -39,6 +39,7 @@ function ReservationCard({ booking }) {
           <h3 className="text-xl font-semibold">
             {numNights} nights in Cabin {name}
           </h3>
+
           {isPast(new Date(startDate)) ? (
             <span className="bg-yellow-800 text-yellow-200 h-7 px-3 uppercase text-xs font-bold flex items-center rounded-sm">
               past
